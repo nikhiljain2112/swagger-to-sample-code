@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=8"
   },
-  "keywords": [],
+  "keywords": ["sample code", "psuedo code", "example", "redoc", "swagger", "api specification", "languages", "convert"],
   "main": "index.js",
   "scripts": {
     "test": "npm run test:coverage npm run test:unit",
