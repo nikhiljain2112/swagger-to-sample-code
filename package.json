@@ -1,11 +1,20 @@
 {
   "name": "swagger-to-sample-code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "generates pseudo codes in different programming languages from api specification (swagger)",
   "engines": {
     "node": ">=8"
   },
-  "keywords": ["sample code", "psuedo code", "example", "redoc", "swagger", "api specification", "languages", "convert"],
+  "keywords": [
+    "sample code",
+    "psuedo code",
+    "example",
+    "redoc",
+    "swagger",
+    "api specification",
+    "languages",
+    "convert"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "npm run test:coverage npm run test:unit",
@@ -13,18 +22,18 @@
     "test:coverage": "nyc"
   },
   "dependencies": {
-    "nyc": "^15.0.1",
     "postman-code-generators": "^0.2.4",
     "postman-collection": "^3.6.0",
     "request": "^2.88.2",
     "swagger2-postman2-parser": "^1.0.5"
   },
   "devDependencies": {
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/nikhiljain2112/swagger-to-sample-code"
   },
   "nyc": {
     "include": [
@@ -42,5 +51,10 @@
     "functions": 100,
     "branches": 100
   },
-  "author": "nikhil jain"
+  "author": "nikhil jain",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "license": "ISC"
 }

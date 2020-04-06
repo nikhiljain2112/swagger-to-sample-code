@@ -3,7 +3,7 @@ Generates pseudo codes in different programming languages from api specification
 
 ### Example
 ```javascript
-const {generateCode} = require('swagger-to-sample-code');
+const generateCode = require('swagger-to-sample-code');
 
 generateCode('https://petstore.swagger.io/v2/swagger.json', ['nodejs', 'java'])
     .then(result => console.log(result))
