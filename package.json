@@ -1,0 +1,46 @@
+{
+  "name": "swagger-to-sample-code",
+  "version": "1.0.0",
+  "description": "generates pseudo codes in different programming languages from api specification (swagger)",
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:coverage npm run test:unit",
+    "test:unit": "mocha",
+    "test:coverage": "nyc"
+  },
+  "dependencies": {
+    "nyc": "^15.0.1",
+    "postman-code-generators": "^0.2.4",
+    "postman-collection": "^3.6.0",
+    "request": "^2.88.2",
+    "swagger2-postman2-parser": "^1.0.5"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "nyc": {
+    "include": [
+      "lib/*.js"
+    ],
+    "exclude": [],
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "check-coverage": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100
+  },
+  "author": "nikhil jain"
+}
