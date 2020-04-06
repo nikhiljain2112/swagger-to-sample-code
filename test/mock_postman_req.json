@@ -1,0 +1,50 @@
+{
+  "id": "47d88747-f412-43ac-907b-3b6aa45a70e4",
+  "name": "Create user",
+  "request": {
+    "name": "Create user",
+    "description": {
+      "content": "This can only be done by the logged in user.",
+      "type": "text/plain"
+    },
+    "url": {
+      "protocol": "https",
+      "path": [
+        "v2",
+        "user"
+      ],
+      "host": [
+        "petstore",
+        "swagger",
+        "io"
+      ],
+      "query": [
+      ],
+      "variable": [
+      ]
+    },
+    "header": [
+      {
+        "key": "Accept",
+        "value": "application/json, application/xml"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "method": "POST",
+    "body": {
+      "mode": "raw",
+      "raw": "{}"
+    }
+  },
+  "response": [
+  ],
+  "event": [
+  ]
+}
